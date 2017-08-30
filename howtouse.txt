@@ -1,5 +1,0 @@
-*Autores:
-	- David Silva Solano
-	- Ulices Melendez Acosta
-1. Correr el Main
-Fin.
