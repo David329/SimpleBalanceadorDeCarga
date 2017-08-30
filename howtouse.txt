@@ -1,7 +1,5 @@
 *Autores:
 	- David Silva Solano
 	- Ulices Melendez Acosta
-1. Levantar Todos los servidores existentes.
-2. Levantar la clase java LoadBalancer, q permitira el ingreso de los clientes y redireccionara a los servidores.
-3. Levantar los clientes.
+1. Correr el Main
 Fin.
