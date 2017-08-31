@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package client;
+
 import java.io.*;
 import java.net.*;
+
 /**
  *
  * @author DZZ
@@ -34,6 +36,12 @@ public class Client {
                 = new BufferedReader(new InputStreamReader(System.in));
 
         String linea;
+        linea = entrada.readLine();
+        socketCliente = new Socket("localhost", Integer.parseInt(linea));
+        // Obtenemos el canal de entrada
+        entrada = new BufferedReader(new InputStreamReader(socketCliente.getInputStream()));
+        // Obtenemos el canal de salida
+        salida = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socketCliente.getOutputStream())), true);
 
         // El programa cliente no analiza los mensajes enviados por el
         // usario, simplemente los reenvía al servidor hasta que este
